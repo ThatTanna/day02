@@ -1,8 +1,6 @@
-package day02.main;
+package main;
 
 import java.util.Date;
-
-import javax.swing.SpinnerDateModel;
 
 import models.Car;
 

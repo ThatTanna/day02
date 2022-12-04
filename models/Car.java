@@ -97,7 +97,4 @@ public class Car {
     public void setAcceleration(Integer acceleration) {
         this.acceleration = acceleration;
     }
-
-
-
 }

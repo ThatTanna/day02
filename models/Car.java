@@ -13,10 +13,18 @@ public class Car {
     private Integer acceleration;
 
     public Car() { }
-
     // When you add a constructor, the default constructor disappears
     public Car(String registration) {
         this.registration = registration;
+    }
+    public Car(String registration, String colour) {
+        this.registration = registration;
+        this.colour = colour;
+    }
+    public Car(String registration, String colour, String make) {
+        this.registration = registration;
+        this.colour = colour;
+        this.make = make;
     }
 
     // Access methods to our members
@@ -45,7 +53,7 @@ public class Car {
     }
 
     public String getRegistration() {
-        return this.registration;
+        return registration;
     }
 
     public void setRegistration(String registration) {
@@ -53,7 +61,7 @@ public class Car {
     }
 
     public Date getRegistrationDate() {
-        return this.registrationDate;
+        return registrationDate;
     }
 
     public void setRegistrationDate(Date registrationDate) {
@@ -67,13 +75,13 @@ public class Car {
 
     public void accelerate() {
         if (this.acceleration < 200) {
-        this.acceleration++;
+            this.acceleration++;
         }
     }
 
     public void accelerate(Integer n) {
         for (int i = 0; i < n; i++) 
-        this.accelerate();
+            this.accelerate();
     }
 
     public void decelerate() {

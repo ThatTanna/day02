@@ -3,9 +3,9 @@ package main;
 import java.util.Date;
 
 import models.Car;
+import models.TurboChargedCar;
 
 public class Main {
-
     public static void main(String[] args) {
 
         Car myCar = new Car("S12");
@@ -25,6 +25,12 @@ public class Main {
         myCar.accelerate();
 
         System.out.printf("acceleration: %d\n", myCar.getAcceleration());
+
+        if (myOtherCar instanceof TurboChargedCar) {
+            // Cast into a TurboChargedCar type
+            TurboChargedCar turbo = (TurboChargedCar)myOtherCar;
+            turbo.setTurbo(true);
+        }
     }
     
 }

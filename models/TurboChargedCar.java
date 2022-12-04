@@ -1,10 +1,11 @@
 package models;
 
-public class TurboChargedCar extends car {
+public class TurboChargedCar extends Car {
 
     public Boolean turbo = false;
 
     public TurboChargedCar(String registration) {
+        // First line
         super(registration);
     }
 
@@ -13,12 +14,16 @@ public class TurboChargedCar extends car {
 
     @Override
     public void accelerate() {
-        super.accelerate();
-        super.accelerate();
-        super.accelerate();
-        super.accelerate();
-        super.accelerate();
-        System.out.println("Vrooooooooooommm");
+        if (this.turbo) {
+            super.accelerate();
+            super.accelerate();
+            super.accelerate();
+            super.accelerate();
+            super.accelerate();
+            System.out.println("Vrooooooooooommm");
+        } else {
+            super.accelerate();
+            System.out.println("Pft..");
+        }
     }
-
 }

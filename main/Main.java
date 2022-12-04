@@ -8,7 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car myCar = new Car("S12");
+        // Car myCar = new Car("S12");
+        //Car myCar = new Car();
+
+        Car myCar;
+        myCar = new Car();
+
+        //myCar.setRegistration("S13");
+
         Car myOtherCar = new Car("S13");
 
         myCar.setColour("red");

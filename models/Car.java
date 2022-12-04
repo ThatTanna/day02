@@ -18,6 +18,7 @@ public class Car {
     public Car(String registration) {
         this.registration = registration;
     }
+    
 
     // Access methods to our members
     // getMemberName, setMemberName
@@ -89,7 +90,4 @@ public class Car {
     public void setAcceleration(Integer acceleration) {
         this.acceleration = acceleration;
     }
-
-
-
 }

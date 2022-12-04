@@ -1,6 +1,6 @@
 package models;
 
-public class TurboChargedCar extends car {
+public class TurboChargedCar extends Car {
 
     public Boolean turbo = false;
 
